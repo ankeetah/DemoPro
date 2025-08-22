@@ -14,9 +14,10 @@ public class Handling {
 
         operatingStr builStr = new operatingStr();
         builStr.repeatLetters("a3c2f3");
-        builStr.removeLetters("aaaddfff");
-        builStr.removeLettersNoBldr("aaasss");
+        builStr.removeLetters("automation");
+        // builStr.removeLettersNoBldr("automation");
         builStr.repeatLetterNoBld("w4l5");
+        builStr.removeAlphaHash("automation");
 
     }
 

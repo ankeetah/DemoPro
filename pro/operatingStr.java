@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class operatingStr {
 
@@ -29,7 +30,7 @@ public class operatingStr {
         System.out.println(result.toString());
         return result.toString();
     }
-
+    // only suitable for the repeating stream like aaabbbccc
     public String removeLettersNoBldr(String input){
         String result = "";
         for(int i = 0;i<input.length();i++){
@@ -50,6 +51,20 @@ public class operatingStr {
             for(int j =0; j<= count;j++){
                 result +=ch;
             }
+        }
+        System.out.println(result);
+        return result;
+    }
+
+    public String removeAlphaHash(String input){
+        String result = "";
+        HashMap<Character, Integer> maps = new HashMap<>();
+        for(int i = 0; i< input.length(); i++){
+            char ch = input.charAt(i);
+           if(!maps.containsKey(ch)){
+            maps.put(ch,i);
+            result +=ch;
+           }
         }
         System.out.println(result);
         return result;
